@@ -28,6 +28,7 @@ class App extends React.Component{
   componentDidMount(){
     window.navigator.geolocation.getCurrentPosition(
       (position)=> {
+        console.log("hi");
         //setState comes from React.Component
          //success call back
         this.setState({lat: position.coords.latitude})
